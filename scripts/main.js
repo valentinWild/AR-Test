@@ -1,5 +1,7 @@
 var lightLevel = "";
 
+document.featurePolicy.allowsFeature('ambient-light-sensor');
+
 window.addEventListener('devicelight', (event) => {
     console.log('CurrentLightLevel: ', event,value);
     lightLevel = event.value;
