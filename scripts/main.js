@@ -1,5 +1,11 @@
 var lightLevel = "";
 
+window.addEventListener('devicelight', (event) => {
+    console.log('CurrentLightLevel: ', event,value);
+    lightLevel = event.value;
+    document.querySelector("#lightlevel").innerHTML = lightLevel;
+});
+
 const sensor = new AmbientLightSensor();
 sensor.addEventListener('reading', event => {
     console.log('CurrentLightLevel: ', sensor.illuminance);
