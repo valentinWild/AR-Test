@@ -8,11 +8,12 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   </head>
   <body>
-    <div>
+    <div style="display: none;">
         <p id="lightlevel">Yes</p>
     </div>
-    <a-scene vr-mode-ui="enabled:flase" embedded arjs="sourceType: webcam; debugUIEnabled: false">
+    <a-scene vr-mode-ui="enabled:flase" arjs="sourceType: webcam; debugUIEnabled: false">
       <a-text value="Hello World" look-at="[gps-camera]" scale="50 50 50" gps-entity-place="latitude: 49.045032; longitude: 12.084370"></a-text>
+      <a-box gps-entity-place="latitude: 49.045032; longitude: 12.084370" color="#4CC3D9"></a-box>
     </a-scene>
   </body>
   <script src="scripts/main.js"></script>
