@@ -14,7 +14,7 @@
     <a-scene vr-mode-ui="enabled:flase" arjs="sourceType: webcam; debugUIEnabled: false">
       <a-text value="Hello World" look-at="[gps-camera]" scale="50 50 50" gps-entity-place="latitude: 49.045032; longitude: 12.084370"></a-text>
       <a-box gps-entity-place="latitude: 49.045032; longitude: 12.084370" color="#4CC3D9"></a-box>
-      <a-camera gps-camera rotation-reader> </a-camera>
+      <a-camera gps-camera zoom="0.6" rotation-reader> </a-camera>
     </a-scene>
   </body>
   <script src="scripts/main.js"></script>
